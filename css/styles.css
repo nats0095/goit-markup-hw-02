@@ -8,15 +8,14 @@
   --brand-color-blue: rgba(33, 150, 243, 1);
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   color: var(--brand-color-black2);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 p,
 ul {
   margin: 0px;
@@ -85,7 +84,6 @@ ul {
   color: var(--brand-color-blue);
 }
 .button-order {
-  font-family: "Roboto", sans-serif;
   background-color: var(--brand-color-blue);
   color: var(--brand-color-white);
   font-style: normal;
@@ -105,7 +103,6 @@ ul {
   color: var(--brand-color-blue);
 }
 .filter-button {
-  font-family: "Roboto", sans-serif;
   background-color: var(--brand-color-gray);
   font-style: normal;
   font-weight: 500;
@@ -133,7 +130,6 @@ ul {
 }
 .description-text {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
@@ -168,9 +164,8 @@ ul {
 }
 .team-job {
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   /* identical to box height */
 
   text-align: center;
@@ -188,7 +183,6 @@ ul {
 }
 .project-type {
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 
@@ -203,7 +197,6 @@ ul {
 }
 .our-address {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -211,7 +204,6 @@ ul {
 }
 .our-address-link {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
