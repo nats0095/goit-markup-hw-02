@@ -11,17 +11,24 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-color-black2);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 p,
 ul {
   margin: 0px;
   padding: 0px;
   border: 0px;
+}
+
+.header,
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0 15px;
 }
 .portfolio-background {
   background-color: var(--brand-color-white);
@@ -41,6 +48,14 @@ ul {
 
   text-align: center;
   letter-spacing: 0.06em;
+}
+.main-what-we-do-header,
+.team-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .logo {
   color: var(--brand-color-blue);
@@ -62,33 +77,33 @@ ul {
 }
 .navigation-link {
   color: var(--brand-color-black2);
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.navigation-link:hover {
+.navigation-link:hover,
+.navigation-link:focus {
   color: var(--brand-color-blue);
 }
+
 .contact-link {
   color: var(--brand-color-gray2);
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--brand-color-blue);
 }
 .button-order {
   font-family: "Roboto", sans-serif;
   background-color: var(--brand-color-blue);
   color: var(--brand-color-white);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -107,7 +122,6 @@ ul {
 .filter-button {
   font-family: "Roboto", sans-serif;
   background-color: var(--brand-color-gray);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -123,31 +137,20 @@ ul {
   background-color: var(--brand-color-blue);
   color: var(--brand-color-white);
 }
-.description-name {
-  font-style: normal;
+.main-description-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.description-text {
-  font-style: normal;
-  font-weight: 400;
+.main-description-content {
   font-size: 14px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
 
   color: var(--brand-color-gray2);
-}
-.caption {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .description {
@@ -157,8 +160,7 @@ ul {
   text-align: center;
   background-color: var(--brand-color-gray);
 }
-.team-name {
-  font-style: normal;
+.team-staff {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -167,10 +169,8 @@ ul {
   letter-spacing: 0.03em;
 }
 .team-job {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   /* identical to box height */
 
   text-align: center;
@@ -179,7 +179,6 @@ ul {
   color: var(--brand-color-gray2);
 }
 .project-name {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -187,8 +186,6 @@ ul {
   letter-spacing: 0.06em;
 }
 .project-type {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 
@@ -202,18 +199,16 @@ ul {
   color: var(--brand-color-white);
 }
 .our-address {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--brand-color-white);
+  font-style: normal;
 }
 .our-address-link {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
 
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
